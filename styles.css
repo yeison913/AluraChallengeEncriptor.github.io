@@ -1,0 +1,175 @@
+* {
+  margin: 0;
+  padding: 0;
+
+  font-family: "Inter";
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 150%;
+  overflow-y: hidden;
+}
+
+body {
+  background: #f3f5fc;
+}
+
+#header{
+  margin-bottom: 10px;
+  position: fixed;
+  padding-bottom: 2%;
+  z-index: 1000;
+  height: auto;
+}
+
+.logo {
+  padding-top: 10px;
+  margin-left: 10px;
+  width: 30%;
+}
+
+
+
+main {
+  height: 80vh;
+  /* background-color: brown; */
+  display: flex;
+  justify-content: space-between;
+  padding: 0 50px;
+  padding-top: 60px;
+}
+
+section {
+  height: 100%;
+  /* background-color: darkgreen; */
+}
+
+.seccion-1 {
+   width: 70%;
+}
+
+.area {
+  width: 80%;
+  height: 70%;
+  display: block;
+  margin: auto;
+  margin-top: 20px;
+  resize: none;
+  font-size: 20px;
+  color: #0a3871;
+  background: #f3f5fc;
+  border: none;
+  padding: 2px;
+  text-transform: lowercase;
+}
+::placeholder {
+  color: #0a3871;
+}
+.area:focus {
+  outline: none;
+}
+
+.informacion,
+h6 {
+  color: #495057;
+  font-size: 18px;
+  text-align: center;
+}
+
+.btn-encriptar {
+  background-color: #0a3871;
+  border: 1px solid #0a3871;
+  border-radius: 24px;
+  color: white;
+  cursor: pointer;
+  height: 67px;
+  width: 328px;
+}
+
+.btn-desencriptar {
+  background: #d8dfe8;
+  border: 1px solid #0a3871;
+  border-radius: 24px;
+  color: #0a3871;
+  cursor: pointer;
+  height: 67px;
+  margin-left: 30px;
+  width: 328px;
+}
+
+.btn-encriptar,
+.btn-desencriptar {
+  width: 25%;
+  height: 40px;
+}
+
+.contenedor-botones {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.seccion-2 {
+  width: 30%; 
+  background-color: white;
+  border-radius: 20px;
+  box-sizing: border-box;
+  overflow: hidden;
+  padding: 20px;
+}
+
+.contenedor-munieco {
+ width: 100%;
+  height: 60%;
+  padding-top: 50px;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.contenedor-h3 {
+  /* width: 100%; */
+  height: 20%;
+  text-align: center;
+}
+
+.contenedor-parrafo {
+  /* width: 100%; */
+  height: 20%;
+  text-align: center;
+}
+
+.contenedor-resultado {
+  /* width: 100%; */
+  color: #0a3871;
+  height: 70%;
+  padding: 25px;
+  box-sizing: border-box;
+}
+
+.contenedor-copiar {
+  /* width: 100%; */
+  height: 20%;
+}
+
+.btn-copiar {
+  width: 35%;
+  height: 40px;
+  text-align: center;
+  display: block;
+  margin: auto;
+  background: #d8dfe8;
+  border: 1px solid #0a3871;
+  border-radius: 24px;
+  color: #0a3871;
+  cursor: pointer;
+}
+footer {
+  width: 100%;
+  height: 50px;
+  color: #495057;
+  font-size: 18px;
+  text-align: center;
+  padding-top: 20px;
+}
+
+.ocultar {
+  display: none;
+}

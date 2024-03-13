@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@200;400&display=swap"
+      rel="stylesheet"
+    />
+    <title>Alura Encriptor</title>
+  </head>
+  <body>
+    <header id="header">
+      <img src="./logo.png" alt="imagen de alura" class="logo" />
+    </header>
+    <main>
+      <section class="seccion-1">
+        <textarea
+          name=""
+          id="inputencrypt"
+          cols="30"
+          rows="10"
+          class="area"
+          placeholder="Ingrese el texto aqui"
+        ></textarea>
+        <div class="informacion">
+          <h6>Solo letras minúsculas y sin acentos</h6>
+        </div>
+        <div class="contenedor-botones">
+          <input
+            type="button"
+            class="btn-encriptar"
+            value="Encriptar"
+            onclick="formatMessage()"
+          />
+          <input
+            type="button"
+            class="btn-desencriptar"
+            value="Desencriptar"
+            onclick="formatMessage(true)"
+          />
+        </div>
+      </section>
+      <section class="seccion-2">
+        <div class="contenedor-munieco">
+          <!-- <img src="candado.png" alt="muñeco de alura" /> -->
+        </div>
+        <div class="contenedor-h3">
+          <h3>Ningún mensaje fue encontrado</h3>
+        </div>
+        <div class="contenedor-parrafo">
+          <p>Ingresa el texto que deseas encriptar o desencriptar</p>
+        </div>
+        <div class="contenedor-resultado">
+          <h3 id="resultado">Mensaje encriptado:</h3>
+          <p id="outputdecrypt"></p>
+        </div>
+        <div class="contenedor-copiar">
+          <input
+            type="button"
+            class="btn-copiar"
+            value="copiar"
+            onclick="copyText()"
+          />
+        </div>
+      </section>
+    </main>
+    <footer>
+      <p>Diseñado Yeison Rodriguez 2023</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
